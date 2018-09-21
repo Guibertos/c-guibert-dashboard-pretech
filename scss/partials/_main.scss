@@ -1,0 +1,48 @@
+html, body {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  background: #ccc;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font;
+  font-weight: $heading;
+}
+p {
+  font-family: $font;
+  font-weight: $paragraph;
+}
+
+main {
+  display: block;
+  box-sizing: inherit;
+  width: 100%;
+  font-family: $font;
+  font-weight: $paragraph;
+  
+  .page {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    padding-top: 55px;
+    width:87.5%;
+    min-height:100%;
+    margin-left:12.5%;
+
+    .style {
+      width: 90%;
+      border: 2.5px solid #1A1A1A;
+    }
+    
+    @include medium {
+      width:75%;
+      margin-left:25%
+    }
+    @include small {
+      width:100%;
+      margin-left:0;
+    }
+  }
+  
+}

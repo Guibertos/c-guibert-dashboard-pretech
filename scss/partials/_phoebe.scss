@@ -1,0 +1,59 @@
+.phoebe-charts {
+	padding-top: 125px;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	flex-wrap: wrap;
+
+	@include medium {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	@include small {
+		position: static;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.chartjs-wrapper-phoebe {
+  		width: 32vw;
+	}
+
+	.chartjs-wrapper-phoebe {
+		@include medium {
+			padding-bottom: 50px;
+		}
+
+		@include small {
+			padding-bottom: 50px;
+		}
+	}
+}
+
+.phoebe-data {
+    padding: 95px;
+    display: flex;
+    justify-content: center;
+
+    @include medium {
+		justify-content: center;
+		padding: auto;
+	}
+
+	@include small {
+		justify-content: center;
+	}
+
+    h3 {
+    	letter-spacing: 1.25px;
+    }
+	
+	.data-wrapper {
+		text-align: center;
+		width: 75%;
+		background-color: #F2F2F2;
+        padding: 100px;
+        box-shadow: 0 6px 16px -4px #666666;			
+	}
+}

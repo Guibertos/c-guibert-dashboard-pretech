@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard Shadow Coffee Roasters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar" id="sidebar">
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile">
+                <profile></profile>
+            </div>
+            <div id="dashmenu">
+                <dash-menu></dash-menu>
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <!-- components for menus -->
+            <div id="mainmenu">
+                <main-menu></main-menu>
+            </div>
+        </nav>
+        <section class="page" id="page">
+            <!-- components for specific pages -->
+            <div class="total-sales">
+                <div class="bar"> 
+                        <canvas id="bar-chart"></canvas>
+                </div>
+                <div class="line"> 
+                    <canvas id="line-chart"></canvas>
+                </div>
+            </div>
+            <hr class="style">
+            <div class="sales-comparison">
+                <div class="doughnut"> 
+                    <canvas id="doughnut-chart"></canvas>
+                </div>
+                <div class="mixed"> 
+                    <canvas id="mixed-chart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>    
+    var profile = {
+        image: 'img/logo.svg',
+        menus: [{
+                title: 'Chandler Bing',
+                link: '#',
+                isActive: false
+            },
+            {
+                title: 'dashboard',
+                link: 'dashboard.html',
+                isActive: true
+
+            },
+            {
+                title: 'sellers',
+                link: '#',
+                isActive: false
+
+            },
+            {
+                title: 'calendar',
+                link: '#',
+                isActive: false
+            }
+        ]
+    }
+    </script>
+    <script src="js/vue.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/mainmenu.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="js/bar-chart-summary.js"></script>
+    <script src="js/line-chart-summary.js"></script>
+    <script src="js/pie-chart-summary.js" ></script>
+    <script src="js/mixed-bar-chart-summary.js"></script>
+   
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard Shadow Coffee Roasters</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <main>
+        <div class="sidebar" id="sidebar">
+            <!-- Components for Profile and Contextual Menu -->
+            <div id="profile">
+                <profile></profile>
+            </div>
+        </div>
+        <nav class="navbar" id="navbar">
+            <!-- components for menus -->
+            <div id="mainmenu">
+                <main-menu></main-menu>
+            </div>
+        </nav>
+        <section class="page" id="page">
+            <!-- components for specific pages -->
+            <div class="joey-charts">
+                <div class="chartjs-wrapper">
+                    <canvas class="chartjs-stacked-bar"></canvas>
+                </div>
+                <div class="wrapper">
+                    <canvas id="myChart4"></canvas>
+                </div>
+            </div>
+            <div class="joey-data">
+                <div class="data-wrapper">
+                    <h3>Joey Tribbiani</h3>
+                    <div class="joey-info">
+                        <p></p>
+                        <div class="doughnut-joey"> 
+                            <canvas id="doughnut-chart-joey"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <script>
+    var profile = {
+        image: 'img/logo.svg',
+        menus: [{
+                title: 'Chandler Bing',
+                link: '#',
+                isActive: false
+            },
+            {
+                title: 'dashboard',
+                link: 'dashboard.html',
+                isActive: true
+
+            },
+            {
+                title: 'sellers',
+                link: '#',
+                isActive: false
+
+            },
+            {
+                title: 'calendar',
+                link: '#',
+                isActive: false
+            }
+        ]
+    }
+
+    </script>
+    <script src="js/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/dashmenu.js"></script>
+    <script src="js/mainmenu-joey.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+    <script src="js/stacked-bar-joey.js"></script>
+    <script src="js/bar-chart-joey.js"></script>
+    <script src="js/piechart-joey.js"></script>
+</body>
+
+</html>

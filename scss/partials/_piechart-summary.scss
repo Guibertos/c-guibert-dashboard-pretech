@@ -1,0 +1,36 @@
+.sales-comparison,
+.total-sales {
+    padding: 75px 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+
+    @include medium {
+        flex-direction: column;
+        padding: 25px 0 75px 0;
+    }
+
+    @include small {
+        flex-direction: column;
+        padding: 75px 0 25px 0;
+    }
+
+    .doughnut, .mixed, .bar, .line {
+        @include medium {
+            padding-bottom: 50px;
+        }
+
+        @include small {
+            padding-bottom: 50px;
+        }
+    }
+}
+
+.total-sales div,
+.sales-comparison div {
+    width: 100%;
+    @include large {
+        width: 50%;
+    }
+}

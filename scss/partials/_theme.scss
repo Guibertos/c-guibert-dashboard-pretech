@@ -1,0 +1,57 @@
+
+html.theme {
+
+	body {
+		background-color: #B6BDD3;
+	}
+
+	#profile  .theme-change a {
+				color: #FFFFFF;
+				background-color: #B6BDD3;
+
+			    &:hover {
+            		background-color: #F0BC5E;
+          		}
+	}
+
+	.sidebar {
+ 		background-color: #565B78;
+	}
+
+	#profile .profile-container .profile-links {
+		li {
+
+			&:hover {
+				background-color: #787C95;
+			}
+
+			&.active {
+				background-color: #787C95;
+				border-right: 10px solid #FFFFFF;
+			}
+
+			a {
+				color: #1A1A1A;
+			}
+		}
+			
+	}
+
+	.navbar #mainmenu {
+		a {
+			color: #1A1A1A;
+			background-color: #565B78;
+
+			&.active {
+				color: #1A1A1A;
+				background-color: #787C95;
+			}
+
+			&:hover {
+				color: #FFFFFF;
+				background-color: #F0BC5E;
+			}
+		}
+	}	
+
+}
